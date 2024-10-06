@@ -19,8 +19,8 @@ ul.navbar {list-style-type: none; margin: 0; padding: 0; overflow: hidden; backg
 ul.navbar li {float: left; border-right: 1px solid black;}
 ul.navbar li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
 ul.navbar li a.active {background-color: lightgrey; color:black}
-ul.navbar li a:hover {background-color: darkorchid;}
 ul.navbar li.right {float: right;}
+ul.navbar li a:hover:not(.active) {background-color: darkorchid;}
 @media screen and (max-width: 600px) {ul.navbar li.right, ul.navbar li {float: none;}}
 
 div.header {opacity: 0;}
