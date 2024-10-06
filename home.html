@@ -14,16 +14,13 @@
 <style>
 html {background: url(banner.jpg) no-repeat center fixed; background-size: cover;}
 
-#navbar {
-	ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: mediumpurple;}
-	li {float: left;}
-	li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
-	li a:hover {background-color: darkorchid;}
-	li {border-right: 1px solid black;}
-	li:last-child {border-right: none;}
-	ul {position: -webkit-sticky; position: sticky; top: 0;}
-}
-.active {background-color: orchid; color:black}
+ul.navbar {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: mediumpurple; 
+	position: -webkit-sticky; position: sticky; top: 0;}
+ul.navbar li {float: left; border-right: 1px solid black;}
+ul.navbar li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+ul.navbar li a.active {background-color: orchid; color:black}
+ul.navbar li a:hover {background-color: darkorchid;}
+ul.navbar li:last-child {border-right: none;}
 </style>
 
 
