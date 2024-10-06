@@ -14,10 +14,11 @@ body {margin: 0;}
 ul.navbar {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: darkslategray; 
 	position: -webkit-sticky; position: sticky; top: 0;}
 ul.navbar li {float: left; padding: 0;}
-ul.navbar li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
-ul.navbar li a:hover:not(.active) {background-color: mediumorchid; text-decoration: underline;}
-ul.navbar li a.active {background-color: darkorchid;}
-ul.navbar li.right {float: right; border-right: none;}
+ul.navbar li a {display: block; color: white; text-align: center; padding: 14px 16px; 
+	text-decoration: none; border-bottom: 2px solid darkslategray; outline: none;}
+ul.navbar li a:hover:not(.active), a:focus:not(.active) {background-color: mediumorchid; text-decoration: underline; outline: none;}
+ul.navbar li a.active {background-color: darkorchid; outline: none;}
+ul.navbar li.right {float: right; border: none; outline: none;}
 @media screen and (max-width: 600px) {ul.navbar li.right, ul.navbar li {float: none;}}
 </style>
 </head>
