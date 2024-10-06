@@ -23,6 +23,11 @@ li a {display: block;
   text-decoration: none;}
 li a:hover {background-color: darkorchid;}
 .active {background-color: #04AA6D;}
+li {border-right: 1px solid black;}
+li:last-child {border-right: none;}
+ul {position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;}
 </style>
 
 <body>
@@ -32,7 +37,9 @@ li a:hover {background-color: darkorchid;}
 	<li><a href="research">Research</a></li>
 	<li><a href="outreach">Outreach</a></li>
 	<li><a href="resources">Resources</a></li>
+	<li style="float:right"><a href="contact">Contact</a></li>
  </ul>
+
 
 
 </body>
